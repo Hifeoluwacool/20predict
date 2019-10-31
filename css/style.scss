@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Agency fb;
+}
+
+header {
+    background: rgb(61, 61, 56);
+    min-height: 76px;
+    color: white;
+    padding: 20px;
+    border-bottom: #c4c4c4 5px solid;
+
+    nav {
+        float: right;
+        margin: 10px;
+    }
+
+    #branding {
+        float: left;
+        margin: 0;
+
+        h1 {
+            margin: 0px 40px;
+        }
+
+        span {
+            color: red;
+            font-size: 40px;
+        }
+    }
+
+    li{
+        display: inline-block;
+        margin:0 10px;
+        font-size: 20px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background: #420d0d;
+    color: #fff;
+}
+.container {
+    margin: 20px;
+    overflow: hidden;
+
+    section {
+        max-width: 760px;
+        margin: auto;
+    }
+}
+
+#lead {
+    float: left;
+    width: 60%;
+}
+
+aside#siderbar {
+    float: right;
+    width: 30%;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+    th {
+        text-align: center;
+        background: yellowgreen;
+        padding: 10px;
+        border-collapse: collapse;
+    }
+    tr:nth-child(odd){
+        background: rgb(65, 37, 37);
+        color: wheat;
+    }
+    td {
+        padding: 5px;
+    }
+}
+
+
+#showcase {
+    min-height: 400px;
+    text-align:center;
+    background: url(bleachers.jpg);
+    color: #fff;
+    .container {
+        margin: 0;
+    }
+    h1 {
+        font-size: 52px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+footer {
+    color: #fff;
+    margin: 0;
+    .container {
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        background: #220202;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    header ,header nav,header #branding{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        span {
+            font-size: 45px;
+        }
+        
+    }
+    .container {
+        overflow: hidden;
+    }
+    section {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    table {
+        td {
+            text-align: center;
+        }
+    }
+
+    aside#sidebar,#lead {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
